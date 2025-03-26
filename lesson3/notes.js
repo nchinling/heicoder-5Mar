@@ -16,7 +16,7 @@ array.push(50);
 array.unshift(200);
 
 array.slice(1,4)
-select index 1 to 3 (4 - 1)
+//select index 1 to 3 (4 - 1)
 
 TSLAClosingPrices.pop(); // remove the LAST element from the back.
 TSLAClosingPrices.shift(); // remove the first element from the front
