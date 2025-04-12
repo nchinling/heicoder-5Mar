@@ -1,0 +1,64 @@
+//if
+function MyComponent(props) {
+  if (props.isLoggedIn) {
+    return <UserDashboard />;
+  } else {
+    return <LoginScreen />;
+  }
+}
+
+//ternary operator
+function MyComponent(props) {
+    return props.isLoggedIn ? <UserDashboard /> : <LoginScreen />;
+  }
+
+// && operator
+// In the following example, if isLoggedIn is false, <UserDashboard /> won't be rendered:
+function MyComponent(props) {
+    return props.isLoggedIn && <UserDashboard />;
+  }
+
+// - **Using element variables**
+// - You can use variables to store elements and conditionally render them based on your logic
+function MyComponent(props) {
+    let componentToRender;
+  
+    if (props.isLoggedIn) {
+      componentToRender = <UserDashboard />;
+    } else {
+      componentToRender = <LoginScreen />;
+    }
+  
+    return componentToRender;
+  }
+
+//map
+// If you have an array of elements and you want to conditionally render them, you can use the .map() function along with conditional statements inside it
+
+function MyComponent(props) {
+    return (
+      <ul>
+        {props.items.map(item => {
+          if (item.isVisible) {
+            return <li key={item.id}>{item.name}</li>;
+          }
+          return null;
+        })}
+      </ul>
+    );
+  }
+
+
+//switch statements
+function MyComponent(props) {
+    switch (props.status) {
+      case 'loading':
+        return <LoadingSpinner />;
+      case 'success':
+        return <SuccessMessage />;
+      case 'error':
+        return <ErrorMessage />;
+      default:
+        return <DefaultComponent />;
+    }
+  }
