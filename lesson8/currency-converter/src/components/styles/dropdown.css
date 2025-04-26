@@ -1,0 +1,17 @@
+.dropdown {
+
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 10px 0;
+    column-gap: 1rem;
+    align-items: center;
+  
+    background-color: gold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    min-width: 150px; /* makes it wider */
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+  

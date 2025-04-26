@@ -1,0 +1,12 @@
+.converter-input {
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    border: solid grey 1px;
+    color: white;
+  }
+  
+  .converted-amount {
+    font-size: 32px;
+    font-weight: bold;
+  }
